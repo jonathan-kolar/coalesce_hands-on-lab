@@ -1,5 +1,12 @@
 defaultStorageMapping: WORK
-jobs: {}
+jobs:
+  Job-1:
+    excludeSelector: ""
+    id: 1
+    includeSelector: "+{location: WORK name: FCT_LINEITEM_ORDERS_DIM_LOOKUP}"
+    name: Job1
+    steps: []
+    subgraphs: []
 locations:
   SAMPLE:
     mappingDefinitions:
@@ -12,11 +19,11 @@ locations:
   WORK:
     mappingDefinitions:
       "2":
-        database: ""
-        schema: ""
+        database: PC_COALESCE_DB
+        schema: PUBLIC
       "3":
-        database: ""
-        schema: ""
+        database: PC_COALESCE_DB
+        schema: PUBLIC
 macros: {}
 packages: {}
 projects: {}
